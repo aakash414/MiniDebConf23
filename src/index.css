@@ -22,3 +22,8 @@
 .slightUpAndDown {
     animation: slightUpAndDown 2s ease infinite; /* Adjust the duration as needed */
 }
+
+.luma{
+    border: 1px solid #bfcbda88; 
+    border-radius: 4px;
+}
