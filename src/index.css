@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+  scroll-behavior: smooth;
+}
+
+.bgpattern{
+    background-image: url('./assets/bgpattern.png');
+    background-repeat: repeat;
+}
+
+@keyframes slightUpAndDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px); /* Adjust the distance for the "up" movement */
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.slightUpAndDown {
+    animation: slightUpAndDown 2s ease infinite; /* Adjust the duration as needed */
+}
+
+.luma{
+    border: 1px solid #bfcbda88; 
+    border-radius: 4px;
+}
