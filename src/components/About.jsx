@@ -33,14 +33,14 @@ const AnimatedText = () => {
   }, []);
 
   return (
-    <>
+    <div id='about'>
       <h1 className="font-black text-4xl md:text-6xl text-black block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
       About
       </h1>
       <p className="text-red-800 mt-4 text-lg block duration-700 delay-150 relative  transform transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
       MiniDevConf23 is a dynamic open-source conference taking place at Cochin University of Science and Technology (CUSAT) in Cochin. This event is dedicated to fostering the open-source community and features engaging talks on Debian OS and related topics. Join us for an enlightening experience in the world of open source!
       </p>
-    </>
+    </div>
 
  
   );
