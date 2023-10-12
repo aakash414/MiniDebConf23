@@ -34,8 +34,8 @@ const AnimatedText = () => {
 
   return (
     <>
-      <h1 className="font-black text-6xl text-black block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-      MiniDebConf23
+      <h1 className="font-black text-4xl md:text-6xl text-black block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+      About
       </h1>
       <p className="text-red-800 mt-4 text-lg block duration-700 delay-150 relative  transform transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
       MiniDevConf23 is a dynamic open-source conference taking place at Cochin University of Science and Technology (CUSAT) in Cochin. This event is dedicated to fostering the open-source community and features engaging talks on Debian OS and related topics. Join us for an enlightening experience in the world of open source!
@@ -62,7 +62,7 @@ const AnimatedText2 = () => {
 
   return (
     <>
-      <h1 className="font-black font-serif  text-6xl text-black block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+      <h1 className="font-black font-serif  text-4xl md:text-6xl text-black block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
       Debian
       </h1>
       <p className="text-red-800  mt-4 font- text-lg block duration-700 delay-150 relative  transform transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
@@ -89,7 +89,7 @@ const AnimatedText3 = () => {
 
   return (
     <>
-      <h1 className="font-black font-serif text-6xl text-white block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+      <h1 className="font-black font-serif text-4xl md:text-6xl text-white block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
       SAIT
       </h1>
       <p className="text-white mt-6 text-lg block duration-700 delay-150 relative  transform transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
@@ -120,18 +120,18 @@ function Hero() {
         className="relative bg-cover bg-white bg-center bg-no-repeat"
         // style={{ backgroundImage: `url(${Student})` }}
       >
-        <div className='grid grid-cols-2 '>
+        <div className='grid grid-cols-1 md:grid-cols-1 '>
            <div>
 
-        <img src={Kutti} data-aos="fade-right" alt="Description of the image" style={{ width: '75%', height: '75%' }}  className='mt-55 ml-85' />
+        <img src={Kutti} data-aos="fade-right" alt="Description of the image" style={{ width: '75%', height: '75%' }}  className='hidden mt-55 ml-85' />
 
         </div>
-        <div data-aos="fade-up"  className="relative mx-auto max-w-screen-xl  px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+        <div data-aos="fade-up"  className="relative max-w-screen-xl  px-4 sm:px-6 lg:flex lg:items-center lg:px-8">
 
 
 
 
-        <div className="bg-transparent backdrop-filter backdrop-blur-lg bg-opacity-30 px-10 max-w-2xl rounded-3xl mx-auto py-20 flex flex-col items-start justify-center">
+        <div className="bg-transparent backdrop-filter backdrop-blur-lg bg-opacity-30 px-10 max-w-2xl rounded-3xl py-20 flex flex-col items-start justify-start">
       <div className="duration-1000 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
         <AnimatedText />
       </div>
@@ -154,8 +154,8 @@ function Hero() {
         className="relative bg-cover bg-black bg-center bg-no-repeat"
         // style={{ backgroundImage: `url(${Student})` }}
       >
-        <div className='grid grid-cols-2 '>
-        <div data-aos="fade-up"  className="relative mx-auto max-w-screen-xl mt-12 px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+        <div className='grid grid-cols-1 md:grid-cols-2 '>
+        <div data-aos="fade-up"  className="relative mx-auto max-w-screen-xl mt-12 px-4 py-10 md:py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
 
 
 
@@ -176,7 +176,7 @@ function Hero() {
         </div>
         <div className=''>
 
-        <img src={People} data-aos="fade-left" alt="Description of the image" style={{ width: '50%', height: '50' }} className='mt-40 ml-40' />
+        <img src={People} data-aos="fade-left" alt="Description of the image" style={{ width: '50%', height: '50' }} className='md:block hidden mt-40 ml-40' />
 
         </div>
         </div>
@@ -187,14 +187,14 @@ function Hero() {
         className="relative bg-cover bg-white bg-center bg-no-repeat"
         // style={{ backgroundImage: `url(${Student})` }}
       >
-        <div className='grid grid-cols-2 '>
+        <div className='grid grid-cols-1 md:grid-cols-2 '>
            
         <div>
 
-        <img src={Student} data-aos="fade-right"  alt="Description of the image"  className='w-38 py-20 px-40 mt-20  ml-8 ' />
+        <img src={Student} data-aos="fade-right"  alt="Description of the image"  className='w-38 py-20 px-40 mt-20  ml-8 md:block hidden' />
 
         </div>
-        <div data-aos="fade-up"  className="relative mx-auto max-w-screen-xl  px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+        <div data-aos="fade-up"  className="relative mx-auto max-w-screen-xl  px-4 py-10 md:py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
 
 
 
