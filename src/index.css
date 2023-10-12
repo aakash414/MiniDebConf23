@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth;
+}
+
 .bgpattern{
     background-image: url('./assets/bgpattern.png');
     background-repeat: repeat;
