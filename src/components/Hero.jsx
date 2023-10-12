@@ -27,7 +27,13 @@ const Hero = () => {
             <motion.div 
             whileHover={{ scale: 1.05 }}
             className='my-10 flex md:justify-start justify-center'> 
+            <a
+            href="https://lu.ma/event/evt-KJFWP5kLbK1uCG5"
+            data-luma-action="checkout"
+            data-luma-event-id="evt-KJFWP5kLbK1uCG5"
+            >
               <button className='bg-[#a80030] px-10 py-3 text-white ubuntu font-[800]'>Register</button>
+            </a>
             </motion.div>
           </div>
         </div>
