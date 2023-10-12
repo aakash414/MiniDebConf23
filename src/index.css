@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bgpattern{
+    background-image: url('./assets/bgpattern.png');
+    background-repeat: repeat;
+}
