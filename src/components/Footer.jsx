@@ -9,8 +9,8 @@ const Footer = () => {
     <div id='footer'>
      <footer className="footer footer-center p-10 text-white   bold rounded bg-base-100  ">
   <nav className="grid grid-flow-col gap-4">
-    <a className="link link-hover hover:text-rose-900">About us</a> 
-    <a className="link link-hover  hover:text-rose-900">Register</a> 
+    <a href="#about" className="link link-hover hover:text-rose-900">About us</a> 
+    <a href="#register" className="link link-hover  hover:text-rose-900">Register</a> 
     <a className="link link-hover  hover:text-rose-900" href='mailto:i.dheerajdileep@gmail.com'>Contact</a> 
     {/* <a className="link link-hover">Press kit</a> */}
   </nav> 

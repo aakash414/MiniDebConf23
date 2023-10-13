@@ -29,7 +29,7 @@ const SupabaseReg = () => {
 
       const handleSubmit = async() => {
         try {
-            if(!formData.name || !formData.email || !formData.phone || !formData.diet || !formData.prof || !formData.github){  
+            if(!formData.name || !formData.email || !formData.diet || !formData.prof || !formData.github){  
                 console.log(formData)
                 setError(true)
                 return
@@ -69,7 +69,7 @@ const SupabaseReg = () => {
             <label htmlFor="" className='text-black ubuntu font-semibold my-5'>Email <span className='text-red-500'>*</span></label>
             <input name="email" onChange={handleInputChange} type="email" className="pl-3 bg-gray-200 py-2 rounded-[5px] text-zinc-900 my-3 w-full" placeholder="Enter your email" />
 
-            <label htmlFor="" className='text-black ubuntu font-semibold my-5'>Phone <span className='text-red-500'>*</span></label>
+            <label htmlFor="" className='text-black ubuntu font-semibold my-5'>Phone</label>
             <input name="phone" onChange={handleInputChange} type="text" className="pl-3 bg-gray-200 py-2 rounded-[5px] text-zinc-900 my-3 w-full" placeholder="Enter your phone" />
 
             <label htmlFor="" className='text-black ubuntu font-semibold my-5'>Your Dietary Preference <span className='text-red-500'>*</span></label>
