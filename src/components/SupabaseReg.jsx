@@ -29,7 +29,7 @@ const SupabaseReg = () => {
 
       const handleSubmit = async() => {
         try {
-            if(!formData.name || !formData.email || !formData.diet || !formData.prof || !formData.github){  
+            if(!formData.name || !formData.email || !formData.diet){  
                 console.log(formData)
                 setError(true)
                 return
@@ -78,7 +78,7 @@ const SupabaseReg = () => {
                 <option value="non-veg">Non-Veg</option>
             </select>
 
-            <label htmlFor="" className='text-black ubuntu font-semibold my-5'>Profession <span className='text-red-500'>*</span></label>
+            <label htmlFor="" className='text-black ubuntu font-semibold my-5'>Profession </label>
             <select name="prof" onChange={handleInputChange} className="pl-3 bg-gray-200 py-2 rounded-[5px] text-zinc-900 my-3 w-full">
                 <option value="student" selected>Student</option>
                 <option value="open-source-contributor">Non-Veg</option>
@@ -86,7 +86,7 @@ const SupabaseReg = () => {
                 <option value="other">Other</option>
             </select>
 
-            <label htmlFor="" className='text-black ubuntu font-semibold my-5'>GitHub Profile URL <span className='text-red-500'>*</span></label>
+            <label htmlFor="" className='text-black ubuntu font-semibold my-5'>GitHub Profile URL </label>
             <input name="github" onChange={handleInputChange} type="url" className="pl-3 bg-gray-200 py-2 rounded-[5px] text-zinc-900 my-3 w-full" placeholder="https://github.com/<username>" />
 
             {error && <p className='text-red-500 ubuntu font-semibold text-lg text-center my-5'>Please enter all the details</p>}
