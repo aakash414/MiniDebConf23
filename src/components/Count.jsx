@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react';
 
 function Count() {
-  // Set initial countdown values
+  const eventDate = new Date('2023-10-21T09:00:00'); // 21st October 2023, 9 am
+
+  // Calculate initial countdown values
+  const now = new Date();
+  const timeDifference = eventDate - now;
+
   const initialCountdownValues = {
-    days: 15,
-    hours: 10,
-    minutes: 24,
-    seconds: 51,
+    days: Math.floor(timeDifference / (1000 * 60 * 60 * 24)),
+    hours: Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+    minutes: Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60)),
+    seconds: Math.floor((timeDifference % (1000 * 60)) / 1000),
   };
 
   // State to hold countdown values
@@ -56,21 +61,20 @@ function Count() {
 
   return (
     <div className=" relative p-5 overflow-hidden bg-white justify-center flex items-center flex-col pt-8">
-    <h2 className="text-center text-xl sm:text-2xl font-bold text-[#a80030] mb-4">
-      The event starts in
-    </h2>
-    <div className="grid grid-flow-row gap-5 sm:grid-flow-col sm:auto-cols-max">
-      {Object.entries(countdownValues).map(([unit, value]) => (
-        <div key={unit} className="p-4 sm:p-8 border border-gray-200 rounded-lg text-center shadow-md">
-          <span className="countdown font-mono text-4xl sm:text-5xl text-[#a80030]">
-            <span style={{ '--value': value }}>{value}</span>
-          </span>
-          <p className="text-gray-400 text-sm sm:text-base">{unit}</p>
-        </div>
-      ))}
+      <h2 className="text-center text-xl sm:text-2xl font-bold text-[#a80030] mb-4">
+        The event starts in
+      </h2>
+      <div className="grid grid-flow-row gap-5 sm:grid-flow-col sm:auto-cols-max">
+        {Object.entries(countdownValues).map(([unit, value]) => (
+          <div key={unit} className="p-4 sm:p-8 border border-gray-200 rounded-lg text-center shadow-md">
+            <span className="countdown font-mono text-4xl sm:text-5xl text-[#a80030]">
+              <span style={{ '--value': value }}>{value}</span>
+            </span>
+            <p className="text-gray-400 text-sm sm:text-base">{unit}</p>
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
-  
   );
 }
 

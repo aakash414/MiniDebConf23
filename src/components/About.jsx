@@ -28,10 +28,13 @@ const AnimatedText = () => {
         About
       </h1>
       <div className='flex flex-row justify-center items-center'>
-        <div className='flex-initial'>
+        <div className='flex-initial md:w-[50%] sm:w-full'>
           <p className="text-red-800 mt-4 text-lg block duration-700 delay-150 relative transform transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
             MiniDebConf23 is a dynamic open-source conference taking place at Cochin University of Science and Technology (CUSAT) in Cochin. This event is dedicated to fostering the open-source community and features engaging talks on Debian OS and related topics. Join us for an enlightening experience in the world of open source!
           </p>
+        </div>
+        <div className='w-[50%]'>
+
         </div>
         {/* <div className='ml-auto'>
           <Count />
@@ -194,7 +197,7 @@ function Hero() {
 
 
 
-        <div className="bg-transparent backdrop-filter backdrop-blur-lg bg-opacity-30 px-10 max-w-2xl rounded-3xl mx-auto py-20 flex flex-col items-start justify-center">
+        <div className="bg-transparent 0 px-10 max-w-2xl rounded-3xl mx-auto py-20 flex flex-col items-start justify-center">
       <div className="duration-1000 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
         <AnimatedText2 />
       </div>
