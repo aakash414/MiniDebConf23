@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 import MouseIcon from '@mui/icons-material/Mouse';
 const Hero = () => {
   return (
-    <div className='h-screen bgpattern'>
+    <div className='h-full bgpattern'>
       <motion.div 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
         <a
         href='#about' 
-        className='m-auto mt-20 md:mt-0 slightUpAndDown'>
+        className='md:block hidden m-auto mt-20 md:mt-0 slightUpAndDown'>
           <MouseIcon className="text-[#a80030] !text-3xl" />
         </a>
       </motion.div>
