@@ -81,7 +81,7 @@ const SupabaseReg = () => {
             <label htmlFor="" className='text-black ubuntu font-semibold my-5'>Profession </label>
             <select name="prof" onChange={handleInputChange} className="pl-3 bg-gray-200 py-2 rounded-[5px] text-zinc-900 my-3 w-full">
                 <option value="student" selected>Student</option>
-                <option value="open-source-contributor">Non-Veg</option>
+                <option value="open-source-contributor">GitHub Contributor</option>
                 <option value="developer">Developer</option>
                 <option value="other">Other</option>
             </select>
