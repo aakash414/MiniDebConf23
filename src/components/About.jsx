@@ -30,7 +30,7 @@ const AnimatedText = () => {
       <div className='flex flex-row justify-center items-center'>
         <div className='flex-initial md:w-[50%] sm:w-full'>
           <p className="text-red-800 mt-4 text-lg block duration-700 delay-150 relative transform transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-            MiniDebConf23 is a dynamic open-source conference taking place at Cochin University of Science and Technology (CUSAT) in Cochin. This event is dedicated to fostering the open-source community and features engaging talks on Debian OS and related topics. Join us for an enlightening experience in the world of open source!
+            MiniDebConf23 is a dynamic open-source conference taking place at Cochin University of Science and Technology (CUSAT) in Cochin. This event is dedicated to fostering the open-source community and features engaging talks on <a className='text-blue-500' href="https://debian.org">Debian</a> OS and related topics. Join us for an enlightening experience in the world of open source!
           </p>
         </div>
         <div className='w-[50%]'>

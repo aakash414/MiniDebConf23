@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Typography } from '@mui/ma/
 import { FaFacebook, FaLinkedin, FaInstagram,FaWhatsapp,FaEnvelope} from 'react-icons/fa';
+import {DiDebian} from 'react-icons/di';
 
 
 const Footer = () => {
@@ -18,19 +19,23 @@ const Footer = () => {
     <a href='mailto:i.dheerajdileep@gmail.com'>
       <FaEnvelope size={24} className="fill-current hover:text-rose-900" />
     </a>
-    <a href='https://in.linkedin.com/in/students-association-of-information-technology-sait'>
+    <a href='https://debian.org.in/'>
+      <DiDebian size={24} className="fill-current hover:text-rose-900" />
+    </a>
+
+    {/* <a href='https://in.linkedin.com/in/students-association-of-information-technology-sait'>
       <FaLinkedin size={24} className="fill-current hover:text-rose-900" />
     </a>
     <a href='https://instagram.com/saitcusat?igshid=MzRlODBiNWFlZA=='>
       <FaInstagram size={24} className="fill-current hover:text-rose-900" />
-    </a>
-    <a href='https://wa.me/+919562784981'>
+    </a> */}
+    {/* <a href='https://wa.me/+919562784981'>
     <FaWhatsapp size={24} className="fill-current hover:text-rose-900" />
-  </a>
+  </a> */}
   </div>
   </nav> 
   <aside>
-    <p>Copyright © 2023 - All right reserved by SAIT CUSAT </p>
+    <p>MiniDebConf © 2023 by SAIT CUSAT is licensed under CC BY 4.0</p>
   </aside>
 </footer>
     </div>

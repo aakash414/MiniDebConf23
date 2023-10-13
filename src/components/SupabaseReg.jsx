@@ -8,7 +8,7 @@ const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env
 
 const SupabaseReg = () => {
     const [error, setError] = React.useState(false)
-    const [success, setSuccess] = React.useState(true)
+    const [success, setSuccess] = React.useState(false)
     const [formData, setFormData] = React.useState({
         name: '',
         email: '',
@@ -48,7 +48,8 @@ const SupabaseReg = () => {
         }
       }
   return (
-    <div className="bg-white h-full py-10 px-10 md:px-40 mb-20">
+    <div id="register" className="bg-white h-full py-10 px-10 md:px-40 mb-20">
+        <h1 className='ubuntu text-black md:text-5xl text-3xl text-center font-semibold'>Registration</h1>
         {success ? 
         <div className='flex justify-center'>
             <Player
