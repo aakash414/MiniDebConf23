@@ -42,7 +42,7 @@ const Navbar = () => {
               </li>
               <li>
               <Link to='https://lu.ma/fsk5e56r'>
-              <button className='block py-2 px-4 md:px-3 text-white rounded bg-rose-800 md:bg-bg-rose-800  md:text-white'>
+              <button className='block py-2 px-4 md:px-3 text-white rounded bg-[#a80030] md:text-white'>
                 Register now
               </button>
               </Link>
