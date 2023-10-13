@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Rubik:wght@600&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
 .ubuntu{
     font-family: 'Ubuntu', sans-serif;
+}
+
+.cursive{
+    font-family: 'Cedarville Cursive', cursive;
 }

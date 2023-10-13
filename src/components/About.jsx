@@ -23,19 +23,20 @@ const AnimatedText = () => {
   }, []);
 
   return (
-    <div id='about' className='w-full'>
-      <h1 className="font-black text-4xl md:text-6xl text-black block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-        About
+    <div id='about' className='w-full flex justify-center  items-center flex-col mt-5'>
+      <h1 className="font-black flex md:flex-row flex-col gap-x-3 md:items-end mr-7 text-4xl md:text-6xl text-gray-900  duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out ubuntu" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        About <span className='text-2xl text-rose-900'>MiniDebConf '23
+      </span>
       </h1>
-      <div className='flex flex-row justify-center items-center'>
-        <div className='flex-initial md:w-[50%] sm:w-full'>
-          <p className="text-red-800 mt-4 text-lg block duration-700 delay-150 relative transform transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-            MiniDebConf23 is a dynamic Free and Open source conference taking place at Cochin University of Science and Technology (CUSAT) in Cochin. This event is dedicated to fostering the open-source community and features engaging talks on <a className='text-blue-500' href="https://debian.org">Debian</a> OS and related topics. Join us for an enlightening experience in the world of Free and Open source!
+      <div className='flex flex-row justify-center items-center mt-8'>
+        <div className='flex justify-center items-center  sm:w-full max-w-2xl'>
+          <p className="text-gray-900 mt-4 block duration-700 delay-150 relative transform transition-all opacity-0 translate-y-12 ease-out text-center  md:text-2xl text-lg tracking-wider " data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+            MiniDebConf23 is a dynamic Free and Open source conference taking place at Cochin University of Science and Technology (CUSAT) in Cochin. This event is dedicated to fostering the open-source community and features engaging talks on <a className='font-semibold' href="https://debian.org">Debian OS </a> and related topics. Join us for an enlightening experience in the world of Free and Open source!
           </p>
         </div>
-        <div className='w-[50%]'>
+        {/* <div className='w-[50%]'>
 
-        </div>
+        </div> */}
         {/* <div className='ml-auto'>
           <Count />
         </div> */}
@@ -63,10 +64,10 @@ const AnimatedText2 = () => {
 
   return (
     <>
-      <h1 className="font-black font-serif  text-4xl md:text-6xl text-black block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+      <h1 className="font-black font-serif  text-4xl md:text-6xl text-black block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out ubuntu" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
       Debian
       </h1>
-      <p className="text-red-800  mt-4 font- text-lg block duration-700 delay-150 relative  transform transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+      <p className="text-red-800 ubuntu  mt-4 font- text-lg block duration-700 delay-150 relative  transform transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
       The Debian community is a global network of passionate individuals dedicated to the development and maintenance of the Debian operating system. It's a diverse and inclusive group of volunteers, including developers, testers, documenters, and users, who collaborate to ensure Debian remains a reliable, free, and open-source platform. The community's collective efforts exemplify the principles of transparency, democracy, and cooperation, making Debian a shining example of the power of open-source collaboration.
       </p>
     </>
@@ -90,10 +91,10 @@ const AnimatedText3 = () => {
 
   return (
     <>
-      <h1 className="font-black font-serif text-4xl md:text-6xl text-white block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+      <h1 className="font-black font-serif text-4xl md:text-6xl text-white block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out ubuntu" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
       SAIT
       </h1>
-      <p className="text-white mt-6 text-lg block duration-700 delay-150 relative  transform transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+      <p className="text-white mt-6 text-lg block duration-700 delay-150 relative  transform ubuntu transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
       SAIT, the Student Association of Information Technology, is an enthusiastic collective of IT students hailing from Cochin University of Science and Technology, School of Engineering, pursuing their B.Tech degrees. Bound by their shared passion for all things related to information technology and software, this vibrant group of students forms a dynamic community eager to explore and excel in the ever-evolving world of IT.
       </p>
     </>
@@ -127,12 +128,12 @@ function Hero() {
         <img src={Kutti} data-aos="fade-right" alt="Description of the image" style={{ width: '75%', height: '75%' }}  className='hidden mt-55 ml-85' />
 
         </div>
-        <div data-aos="fade-up"  className="relative max-w-screen-xl  px-4 sm:px-6 lg:flex lg:items-center lg:px-8">
+        <div data-aos="fade-up"  className="relative  px-4 sm:px-6 lg:items-center lg:px-8 w-full">
 
 
 
 
-        <div className="bg-transparent  bg-opacity-30 px-10  py-20 flex flex-col items-start justify-start">
+        <div className="bg-transparent  bg-opacity-30 px-10  py-20 flex flex-col ">
       <div className="duration-1000 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
         <AnimatedText />
       </div>
