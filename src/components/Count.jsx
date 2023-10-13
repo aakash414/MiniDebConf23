@@ -64,7 +64,7 @@ function Count() {
       <h2 className="text-center text-xl sm:text-2xl font-bold text-[#a80030] mb-4">
         The event starts in
       </h2>
-      <div className="grid grid-flow-row gap-5 sm:grid-flow-col sm:auto-cols-max">
+      <div className="grid gap-5 lg:grid-cols-4 md:grid-col-4 grid-cols-2">
         {Object.entries(countdownValues).map(([unit, value]) => (
           <div key={unit} className="p-4 sm:p-8 border border-gray-200 rounded-lg text-center shadow-md">
             <span className="countdown font-mono text-4xl sm:text-5xl text-[#a80030]">
