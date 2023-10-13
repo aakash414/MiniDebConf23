@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="border-gray-200 bg-gray-50">
+      <nav className="border-gray-200 bg-gray-50 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center">
             <img src="https://debian.org.in/images/logo.png" className="h-8 mr-3" alt="Flowbite Logo" />
@@ -18,7 +18,7 @@ const Navbar = () => {
           <button
             onClick={toggleMobileMenu}
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-rose-800"
             aria-controls="navbar-solid-bg"
             aria-expanded={isMobileMenuOpen ? 'true' : 'false'}
           >
@@ -39,7 +39,7 @@ const Navbar = () => {
                 <a href="#register" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover-bg-transparent md:border-0 md:hover:text-rose-800 md:p-0">Register</a>
               </li>
               <li>
-                <a href="#footer" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover-bg-transparent md:border-0 md:hover:text-rose-800 md:p-0">Contact</a>
+                <a href="https://wa.me/+919562784981" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover-bg-transparent md:border-0 md:hover:text-rose-800 md:p-0">Contact</a>
               </li>
               <li>
               <button className='block py-2 px-4 md:px-3 text-white rounded bg-rose-800 md:bg-bg-rose-800  md:text-white'>
