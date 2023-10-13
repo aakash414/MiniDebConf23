@@ -83,7 +83,7 @@ const SupabaseReg = () => {
                 <option value="student" selected>Student</option>
                 {/* <option value="open-source-contributor">Open Source Contributor</option> */}
                 <option value="working">Working Professional</option>
-                <option value="other">Other</option>
+                {/* <option value="other">Other</option> */}
             </select>
 
             <label htmlFor="" className='text-black ubuntu font-semibold my-5'>GitHub Profile URL </label>
