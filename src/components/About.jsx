@@ -1,14 +1,3 @@
-// import React from 'react'
-
-// const About = () => {
-//   return (
-//     <div>About</div>
-//   )
-// }
-
-// export default 
-
-
 import Kutti from '../assets/Images/Logo.png'
 import People from '../assets/Images/SAIT.jpeg'
 import React, { useRef, useEffect } from 'react';
@@ -16,6 +5,7 @@ import React, { useRef, useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Student from '../assets/Images/Student.png'
+import Count from './Count';
 
 
 const AnimatedText = () => {
@@ -33,14 +23,22 @@ const AnimatedText = () => {
   }, []);
 
   return (
-    <div id='about'>
+    <div id='about' className='w-full'>
       <h1 className="font-black text-4xl md:text-6xl text-black block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-      About
+        About
       </h1>
-      <p className="text-red-800 mt-4 text-lg block duration-700 delay-150 relative  transform transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-      MiniDevConf23 is a dynamic open-source conference taking place at Cochin University of Science and Technology (CUSAT) in Cochin. This event is dedicated to fostering the open-source community and features engaging talks on Debian OS and related topics. Join us for an enlightening experience in the world of open source!
-      </p>
+      <div className='flex flex-row justify-center items-center'>
+        <div className='flex-initial'>
+          <p className="text-red-800 mt-4 text-lg block duration-700 delay-150 relative transform transition-all opacity-0 translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+            MiniDebConf23 is a dynamic open-source conference taking place at Cochin University of Science and Technology (CUSAT) in Cochin. This event is dedicated to fostering the open-source community and features engaging talks on Debian OS and related topics. Join us for an enlightening experience in the world of open source!
+          </p>
+        </div>
+        {/* <div className='ml-auto'>
+          <Count />
+        </div> */}
+      </div>
     </div>
+
 
  
   );
@@ -131,7 +129,7 @@ function Hero() {
 
 
 
-        <div className="bg-transparent backdrop-filter backdrop-blur-lg bg-opacity-30 px-10 max-w-2xl rounded-3xl py-20 flex flex-col items-start justify-start">
+        <div className="bg-transparent  bg-opacity-30 px-10  py-20 flex flex-col items-start justify-start">
       <div className="duration-1000 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
         <AnimatedText />
       </div>
@@ -140,9 +138,6 @@ function Hero() {
        
       </div>
     </div>
-  
-
-
 
         </div>
        
@@ -208,11 +203,7 @@ function Hero() {
        
       </div>
     </div>
-  
 
-
-
-       
         </div>
        
       </div>

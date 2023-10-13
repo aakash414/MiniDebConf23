@@ -28,9 +28,9 @@ const Navbar = () => {
             </svg>
           </button>
           <div className={`w-full md:flex md:items-center md:w-auto ${isMobileMenuOpen ? 'block' : 'hidden'}`} id="navbar-solid-bg">
-            <ul className="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0">
+            <ul className="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 justify-center items-center">
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4 text-white bg-rose-800 rounded md:bg-transparent md:text-rose-800 md:p-0" aria-current="page">Home</a>
+                <a href="#" className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent md:text-rose-800 md:p-0" aria-current="page">Home</a>
               </li>
               <li>
                 <a href="#about" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-rose-800 md:p-0">About</a>
@@ -40,6 +40,11 @@ const Navbar = () => {
               </li>
               <li>
                 <a href="#footer" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover-bg-transparent md:border-0 md:hover:text-rose-800 md:p-0">Contact</a>
+              </li>
+              <li>
+              <button className='block py-2 px-4 md:px-3 text-white rounded bg-rose-800 md:bg-transparent md:text-gray-900'>
+                Register now
+              </button>
               </li>
             </ul>
           </div>
