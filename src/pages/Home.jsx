@@ -7,7 +7,7 @@ import Timeline from '../components/Timeline'
 import Footer from '../components/Footer'
 import Count from '../components/Count'
 import Sponsor from '../components/Sponsor'
-// import SupabaseReg from '../components/SupabaseReg'
+import SupabaseReg from '../components/SupabaseReg'
 
 
 const Home = () => {
