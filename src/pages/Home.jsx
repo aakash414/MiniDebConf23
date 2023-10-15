@@ -6,7 +6,8 @@ import Timeline from '../components/Timeline'
 // import Registration from '../components/Registration'
 import Footer from '../components/Footer'
 import Count from '../components/Count'
-import SupabaseReg from '../components/SupabaseReg'
+import Sponsor from '../components/Sponsor'
+// import SupabaseReg from '../components/SupabaseReg'
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       {/* <Timeline /> */}
       {/* <Registration /> */}
       <SupabaseReg />
+      <Sponsor/>
       <Footer />
     </div>
   )
