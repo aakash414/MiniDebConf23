@@ -48,7 +48,7 @@ const SupabaseReg = () => {
         }
       }
   return (
-    <div id="register" className="bg-white h-full py-10 px-10 md:px-40 mb-20">
+    <div id="register" className="bg-white h-full py-10 px-10 md:px-40 ">
         <h1 className='ubuntu text-black md:text-5xl text-3xl text-center font-semibold'>Registration</h1>
         {success ? 
         <div className='flex justify-center'>
