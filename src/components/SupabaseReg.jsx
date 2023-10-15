@@ -89,8 +89,8 @@ const SupabaseReg = () => {
             <label htmlFor="" className='text-black ubuntu font-semibold my-5'>GitHub Profile URL </label>
             <input name="github" onChange={handleInputChange} type="url" className="pl-3 bg-gray-200 py-2 rounded-[5px] text-zinc-900 my-3 w-full" placeholder="https://github.com/<username>" />
 
-            {error && <p className='text-red-500 ubuntu font-semibold text-lg text-center my-5'>Please enter all the details</p>}
-            <button onClick={handleSubmit} className='bg-[#a80030] hover:bg-rose-700 px-5 py-3 text-white ubuntu font-bold text-center my-10'>Register</button>
+            {error && <p className='text-red-500 ubuntu font-semibold text-lg text-center my-5'>Sorry! The registrations have been closed :(</p>}
+            <button onClick={() => setError(true)} className='bg-[#a80030] hover:bg-rose-700 px-5 py-3 text-white ubuntu font-bold text-center my-10'>Register</button>
         </div>}
     </div>
   )
