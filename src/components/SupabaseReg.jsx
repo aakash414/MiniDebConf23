@@ -7,7 +7,7 @@ import { Player, Controls } from '@lottiefiles/react-lottie-player';
 const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_ANNON_KEY);
 
 const SupabaseReg = () => {
-    const [error, setError] = React.useState(false)
+    const [error, setError] = React.useState(true)
     const [success, setSuccess] = React.useState(false)
     const [formData, setFormData] = React.useState({
         name: '',
