@@ -8,7 +8,7 @@ import cusat from '../assets/cusat.png'
 
 function Sponsor() {
   return (
-    <div className='flex justify-center items-center flex-col gap-y-auto bg-white pb-5'>
+    <div className='flex justify-center items-center flex-col gap-y-auto bg-white pb-5 pt-5'>
         <h1 className='font-bold md:text-6xl text-3xl ubuntu text-gray-900'>Our Sponsors</h1>
         <div className='grid md:grid-cols-2 md:max-w-md   gap-y-5 md:gap-x-28 w-full md:grid-col-1 pt-5 justify-center items-center m-5'>
             <img
