@@ -77,7 +77,7 @@ const Confirmation = () => {
                 <div className='flex flex-col justify-center'>
                     <h1 className='ubuntu text-black md:text-5xl text-3xl text-center font-semibold'>Thank you for confirming your seat!</h1>
                     <h1 className='ubuntu text-black md:text-3xl text-xl text-center font-light my-10'>Make sure to bring your laptops for the event :D</h1>
-                    <p className='ubuntu text-black md:text-2xl text-xl text-center font-light my-5'>Venu: NLB Block, School Of Engineering, CUSAT</p>
+                    <p className='ubuntu text-black md:text-2xl text-xl text-center font-light my-5'>Venue: NLB Block, School Of Engineering, CUSAT</p>
                     <p className='ubuntu text-black md:text-2xl text-xl text-center font-light my-5'>Date: 21st October 2023</p>
                     <p className='ubuntu text-black md:text-2xl text-xl text-center font-light my-5'>Time: 09:00 AM - 16:00 PM</p>
                 </div>
