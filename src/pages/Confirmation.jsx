@@ -18,9 +18,8 @@ const Confirmation = () => {
     React.useEffect(() => {
         const fetchEmails = async() => {
             try {
-                const { data } = await supabase.from("registration").select().limit(60);
+                const { data } = await supabase.from("registration").select().limit(75);
                 const emailData = data.map((item) => item.email)
-                console.log(emailData)
                 setEmails(emailData)
             } catch (error) {
                 console.log(error)
