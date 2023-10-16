@@ -42,7 +42,7 @@ const Confirmation = () => {
                 return
             }
             console.log(formData)
-            if(emails.includes(formData.email) || formData.email == 'alenpaul2001@gmail.com'){
+            if(emails.includes(formData.email) || formData.email == 'alenpaul2001@gmail.com' || formData.email == 'shibinrjunior@gmail.com'){
                 const { data, error } = await supabase
                     .from('confirmations')
                     .insert(formData)
