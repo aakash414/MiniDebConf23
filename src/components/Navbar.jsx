@@ -40,13 +40,13 @@ const Navbar = () => {
               <li>
                 <a href="#footer" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover-bg-transparent md:border-0 md:hover:text-rose-800 md:p-0">Contact</a>
               </li>
-              <li>
+              {/* <li>
               <a href='#register'>
               <button className='block py-2 px-4 md:px-3 text-white rounded bg-[#a80030] md:text-white'>
                 Register now
               </button>
               </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

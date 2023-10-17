@@ -24,7 +24,7 @@ const Hero = () => {
               <h1 className='text-[#a80030] text-3xl md:text-6xl mr-10 md:mr-40 font-[900] ubuntu'>Kochi'23</h1>
               <h1 className='text-[#a80030] text-3xl md:text-6xl ubuntu'>CUSAT</h1>
             </div>
-            <motion.div 
+            {/* <motion.div 
             whileHover={{ scale: 1.05 }}
             className='my-10 flex md:justify-start justify-center'> 
             <a
@@ -32,7 +32,7 @@ const Hero = () => {
             >
               <button className='bg-[#a80030] px-10 py-3 text-white ubuntu font-[800]'>Register</button>
             </a>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
         <a
