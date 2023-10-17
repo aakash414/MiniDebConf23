@@ -8,7 +8,7 @@ import { Player, Controls } from '@lottiefiles/react-lottie-player';
 const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_ANNON_KEY);
 
 const Confirmation = () => {
-    const [emails, setEmails] = React.useState([])
+    const [emails, setEmails] = React.useState(['alenpaul2001@gmail.com', 'sukeshs2499@gmail.com', 'ashnamkhalid333@gmail.com','swethajayaram111@gmail.com','ajazahammedck@gmail.com','adhithmukundan@gmail.com','malayghoshal007@gmail.com'])
     const [error, setError] = React.useState(false)
     const [success, setSuccess] = React.useState(false)
     const [formData, setFormData] = React.useState({
@@ -16,16 +16,17 @@ const Confirmation = () => {
         confirmation: true
       });
     React.useEffect(() => {
-        const fetchEmails = async() => {
-            try {
-                const { data } = await supabase.from("registration").select().limit(75);
-                const emailData = data.map((item) => item.email)
-                setEmails(emailData)
-            } catch (error) {
-                console.log(error)
-            }
-        }
-        fetchEmails()
+        // const fetchEmails = async() => {
+        //     try {
+        //         const { data } = await supabase.from("registration").select().limit(75);
+        //         const emailData = data.map((item) => item.email)
+        //         console.log(emailData)
+        //         setEmails(emailData)
+        //     } catch (error) {
+        //         console.log(error)
+        //     }
+        // }
+        // fetchEmails()
     }, [])
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -42,7 +43,7 @@ const Confirmation = () => {
                 return
             }
             console.log(formData)
-            if(emails.includes(formData.email) || formData.email == 'alenpaul2001@gmail.com' || formData.email == 'shibinrjunior@gmail.com'){
+            if(emails.includes(formData.email)){
                 const { data, error } = await supabase
                     .from('confirmations')
                     .insert(formData)
