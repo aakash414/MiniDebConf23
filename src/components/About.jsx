@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Student from '../assets/Images/Student.png'
 import Count from './Count';
+import { Helmet } from 'react-helmet-async';
 
 
 const AnimatedText = () => {
@@ -91,6 +92,12 @@ const AnimatedText3 = () => {
 
   return (
     <>
+
+      <Helmet>
+      <title>SAIT</title>
+      <meta name="description" content="SAIT, the Student Association of Information Technology,cusat" />
+      </Helmet>
+      {/* </Helmet> */}
       <h1 className="font-black font-serif text-4xl md:text-6xl text-white block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out ubuntu" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
       SAIT
       </h1>
