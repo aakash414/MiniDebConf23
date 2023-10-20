@@ -36,22 +36,29 @@ const Timeline = () => {
     },
     {
       type: 'work',
-      date: '11:15 AM-12:00 AM',
+      date: '11:15 AM-12:00 PM',
       title: 'IBoF on Free Software and Open source software.',
       subtitle: '',
       description: '',
     },
     {
       type: 'work',
-      date: '12:15 AM-12:30 AM',
+      date: '12:15 PM-12:30 PM',
       title: 'Free software alternatives for proprietary tools',
       subtitle: 'Mujeeb Rahman K',
       description: '',
     },
     {
       type: 'work',
-      date: '12:40 AM-1:00 AM',
+      date: '12:40 PM-1:00 PM',
       title: 'Fun and Games',
+      subtitle: '',
+      description: '',
+    },
+    {
+      type: 'work',
+      date: '1:00 PM-2:00 PM',
+      title: 'Lunch',
       subtitle: '',
       description: '',
     },
@@ -64,7 +71,7 @@ const Timeline = () => {
     },
     {
       type: 'work',
-      date: '3.00 PM to 3.30',
+      date: '3.00 PM to 3.30 PM',
       title: 'Introduction to Mobian',
       subtitle: 'Pirate Praveen',
       description: '',
@@ -102,7 +109,7 @@ const Timeline = () => {
       <h1 className='font-bold text-5xl text-rose-900'>Event timeline</h1>
         <div className='flex flex-col justify-between items-start mt-10 w-full px-38 gap-10 mx-8 md:flex-row'>
           <div className='bg-white w-full flex justify-center items-center rounded-xl shadow-xl border-gray-400 flex-col'>
-            <h1 className='font-bold text-3xl pt-10 text-gray-900'>Seminal Hall</h1>
+            <h1 className='font-bold text-3xl pt-10 text-gray-900'>Seminar Hall</h1>
             <VerticalTimeline className='pt-10' layout="1-column-left">
             {timelineData1.map((item, index) => (
               <VerticalTimelineElement
