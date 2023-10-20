@@ -102,7 +102,7 @@ const Timeline = () => {
       <h1 className='font-bold text-5xl text-rose-900'>Event timeline</h1>
         <div className='flex flex-col justify-between items-start mt-10 w-full px-38 gap-10 mx-8 md:flex-row'>
           <div className='bg-white w-full flex justify-center items-center rounded-xl shadow-xl border-gray-400 flex-col'>
-            <h1 className='font-bold text-3xl pt-10 text-gray-900'>Seminal Hall</h1>
+            <h1 className='font-bold text-3xl pt-10 text-gray-900'>Seminar Hall</h1>
             <VerticalTimeline className='pt-10' layout="1-column-left">
             {timelineData1.map((item, index) => (
               <VerticalTimelineElement
