@@ -17,7 +17,7 @@ const Footer = () => {
   </nav> 
   <nav>
   <div className="grid grid-flow-col gap-4">
-    <a href='mailto:' target='blank'>
+    <a href='mailto:i.dheerajdileep@gmail.com' target='blank'>
       <FaEnvelope size={24} className="fill-current hover:text-rose-900" />
     </a>
     <a href='https://debian.org.in/' target='blank'>

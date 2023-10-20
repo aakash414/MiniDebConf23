@@ -94,7 +94,7 @@ const AnimatedText3 = () => {
     <>
 
       <Helmet>
-      <title>SAIT</title>
+      {/* <title>SAIT</title> */}
       <meta name="description" content="SAIT, the Student Association of Information Technology,cusat" />
       </Helmet>
       {/* </Helmet> */}
