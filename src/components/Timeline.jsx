@@ -57,6 +57,13 @@ const Timeline = () => {
     },
     {
       type: 'work',
+      date: '1:00 PM-2:00 PM',
+      title: 'Lunch',
+      subtitle: '',
+      description: '',
+    },
+    {
+      type: 'work',
       date: '2.00 PM to 2.45 PM',
       title: 'FOSS For Us ',
       subtitle: 'Vishal Arya',
