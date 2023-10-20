@@ -36,21 +36,21 @@ const Timeline = () => {
     },
     {
       type: 'work',
-      date: '11:15 AM-12:00 AM',
+      date: '11:15 AM-12:00 PM',
       title: 'IBoF on Free Software and Open source software.',
       subtitle: '',
       description: '',
     },
     {
       type: 'work',
-      date: '12:15 AM-12:30 AM',
+      date: '12:15 PM-12:30 PM',
       title: 'Free software alternatives for proprietary tools',
       subtitle: 'Mujeeb Rahman K',
       description: '',
     },
     {
       type: 'work',
-      date: '12:40 AM-1:00 AM',
+      date: '12:40 PM-1:00 PM',
       title: 'Fun and Games',
       subtitle: '',
       description: '',
@@ -71,7 +71,7 @@ const Timeline = () => {
     },
     {
       type: 'work',
-      date: '3.00 PM to 3.30',
+      date: '3.00 PM to 3.30 PM',
       title: 'Introduction to Mobian',
       subtitle: 'Pirate Praveen',
       description: '',
